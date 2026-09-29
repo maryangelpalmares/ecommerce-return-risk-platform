@@ -1,0 +1,52 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Local datasets and large data files
+data/raw/*
+!data/raw/.gitkeep
+*.csv
+*.parquet
+*.xlsx
+*.xls
+
+# Local database and application files
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Spark and Databricks local artifacts
+spark-warehouse/
+metastore_db/
+derby.log/
+artifacts/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
